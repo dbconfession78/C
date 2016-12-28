@@ -5,7 +5,9 @@
 #define MAX_LINES 10
 #define TAB_SIZE 8
 
-
+/* Exercise 1-21 - write a program 'entab' that replaces strings of blanks by 
+the minimum number of tabs and blanks to acheive the same spacing.
+*/
 int main() {
 	char string[MAX_CHARS];
 	char result[MAX_CHARS];
