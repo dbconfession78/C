@@ -7,6 +7,7 @@ forget to handle quoted string character constants properly. C comments do not
 nest */
 
 //TODO: program should identify .c extension
+//TODO: if entire line is single-line comment, remove the line break as well.
 
 #define MAX_CHARS 10000
 
