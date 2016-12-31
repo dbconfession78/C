@@ -12,4 +12,4 @@ Holberton School Students
 
 ## License
 
-Copyright Fair Use: https://en.wikipedia.org/wiki/Fair_use
+Copyright WTFPL http://www.wtfpl.net/
