@@ -15,11 +15,11 @@ Holberton School Students
 #### Spoilers ####
 
 Other Published Solutions, warning spoiler alert.
-> clc-wiki, K&R2 solutions:
-> http://clc-wiki.net/wiki/K%26R2_solutions
+clc-wiki, K&R2 solutions:
+>http://clc-wiki.net/wiki/K%26R2_solutions
 - - - -
-> Learn to Solve it, C Programming Language:
-> http://www.learntosolveit.com/cprogramming/
+Learn to Solve it, C Programming Language:
+>http://www.learntosolveit.com/cprogramming/
 
 ## License ##
 
