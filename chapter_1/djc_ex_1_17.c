@@ -1,6 +1,6 @@
 #include <stdio.h>
 #define MAXLINE 1024 /* maximum input line length */
-#define MEASUREBAR 80 /* Measuring stick to check lines */
+#define MEASUREBAR 81 /* Measuring stick to check lines - 81 is measurebar so as to exclude the '\n' input from clicking 'enter'*/
 
 int djc_getline(char line[], int limit);
 void push_string(char to[], int row_idx);
@@ -19,7 +19,9 @@ int main() {
 
   while ((len = djc_getline(line, MAXLINE)) > 0) {
     if (len > MEASUREBAR) {
-      printf("Line longer than 80 characters---|>  %s", line); } }
+      printf("Line longer than 80 characters---|>  %s\nbegin input here---|>  ", line); } 
+    else {
+      printf("Line is 80 characters or less\nbegin input here---|>  "); } }
 
     return 0; }
 
