@@ -16,10 +16,10 @@ Holberton School Students
 
 Other Published Solutions, warning spoiler alert.
 
->clc-wiki, K&R2 solutions: http://clc-wiki.net/wiki/K%26R2_solutions
+>clc-wiki, K&R2 solutions: <a href="http://clc-wiki.net/wiki/K%26R2_solutions" target="_blank">http://clc-wiki.net/wiki/K%26R2_solutions</a>
 
->Learn to Solve it, C Programming Language: http://www.learntosolveit.com/cprogramming/
+>Learn to Solve it, C Programming Language: <a href="http://www.learntosolveit.com/cprogramming/" target="_blank">http://www.learntosolveit.com/cprogramming/</a>
 
 ## License ##
 
-Copyright WTFPL http://www.wtfpl.net/
+Copyright WTFPL <a href="http://www.wtfpl.net/" target="_blank">http://www.wtfpl.net/</a>
