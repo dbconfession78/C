@@ -3,7 +3,6 @@
 #define MEASUREBAR 81 /* Measuring stick to check lines - 81 is measurebar so as to exclude the '\n' input from clicking 'enter'*/
 
 int djc_getline(char line[], int limit);
-void push_string(char to[], int row_idx);
 
 /* print the longest input line */
 int main() {

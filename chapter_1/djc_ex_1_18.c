@@ -2,7 +2,6 @@
 #define MAXLINE 1024 /* maximum input line length */
 
 int djc_getline(char line[], int limit);
-void push_string(char to[], int row_idx);
 
 /* print the longest input line */
 int main() {
