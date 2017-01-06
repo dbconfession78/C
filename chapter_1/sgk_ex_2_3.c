@@ -4,7 +4,7 @@
 
 #define MAX_BYTES 256
 
-/* */
+/* Excersize 2-3: */
 
 int htoi(char s[MAX_BYTES]);
 int main(void) {
@@ -90,11 +90,3 @@ int htoi(char s[MAX_BYTES]) {
 	result = result + array[strlen(s)-1];
 	return result;
 }
-
-// F3A0C
-// 983040+12288+2560+0+12 = 997900
-// 997900 / 16 = 62368	r 12 =	C
-// 62368 / 16 = 3898	r 0 =	0
-// 3898 / 16 = 243		r 10 = 	A
-// 243 / 16 = 15		r 3 = 	3
-// 15 / 16 = 0			r 15 =	F
