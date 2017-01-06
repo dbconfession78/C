@@ -1,4 +1,4 @@
-# The C Programming Lanugage, prep-work #
+# The C Programming Language, prep-work #
 
 ## Synopsis ##
 
@@ -14,10 +14,10 @@ Holberton School Students
 
 #### Spoilers ####
 
-clc-wiki, K&R2 solutions:
+> clc-wiki, K&R2 solutions:
 > http://clc-wiki.net/wiki/K%26R2_solutions
-- - - -
-Learn to Solve it, C Programming Language:
+> - - - -
+> Learn to Solve it, C Programming Language:
 > http://www.learntosolveit.com/cprogramming/
 
 ## License ##
