@@ -3,7 +3,6 @@
 
 int djc_getline(char line[], int limit);
 
-/* print the longest input line */
 int main() {
   printf("\n\n\n\n");
   printf("in this program:\n");
@@ -29,7 +28,8 @@ int main() {
 
     return 0; }
 
-/* djc_getline: read a line into s, return length */
+/* djc_getline: function that gets characters and stores them into the input array as a string,
+   then stores that array and returns the length of the string as an integer */
 int djc_getline(char s[], int limit) {
   int c, i;
 
