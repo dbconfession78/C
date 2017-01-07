@@ -44,7 +44,7 @@ int djc_getline(char s[], int limit) {
 
   return i; }
 
-/* reverse string: 'string' transforms to 'reversed_string' and is returned; assume to is big enough */
+/* reverse string: 'string' transforms to 'reversed_string' and is returned */
 
 void reverse_string(char string[], int length) {
   char new_string[MAXLINE];
