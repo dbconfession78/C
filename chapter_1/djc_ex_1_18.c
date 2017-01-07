@@ -9,7 +9,7 @@ int main() {
   printf("user inputs lines of characters and words followed by clicking enter\n");
   printf("blank lines and spaces and tabs trailing input lines will be deleted from input");
   printf("then, new line will be printed - to end, user should input EOF (control 'd').\n");
-  printf("begin input here---|>  ");
+  printf("begin input here------|>");
 
   int len, idx; /* current line length */
   char line[MAXLINE]; /* current input line */
@@ -22,9 +22,9 @@ int main() {
       idx -= 1;
       len -= 1; }
     if (len == 0) {
-      printf("There was no character input detected, all input was deleted\nbegin input here---|>  "); }
+      printf("There was no character input detected, all input was deleted\nbegin input here------|>"); }
     else {
-      printf("New Length= %d, Modified to remove blank lines, and trailing spaces and tabs---|>  %s\nbegin input here---|>  ", len, line); } }
+      printf("New Length= %d, Modified to remove blank lines, and trailing spaces and tabs------|>%s\nbegin input here------|>", len, line); } }
 
     return 0; }
 

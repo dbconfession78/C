@@ -11,7 +11,7 @@ int main() {
   printf("user inputs lines of characters and words followed by clicking enter.\n");
   printf("from input lines, tabs are replaced by '*' (asterisks), then immediately printed\n");
   printf("to end, user should input EOF (control 'd').\n");
-  printf("begin input here---|>   ");
+  printf("begin input here------|>");
 
   int len; /* current line length */
   char line[MAXLINE]; /* current input line */
@@ -20,7 +20,7 @@ int main() {
   while ((len = djc_getline(line, MAXLINE)) > 0) {
     detab(line, new_line);
 
-    printf("New Line with tabs replaced by '*'---|>  %sbegin input here---|>   ", new_line); }
+    printf("New Line with tabs replaced by '*'------|>%sbegin input here------|>", new_line); }
 
     return 0; }
 

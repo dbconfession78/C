@@ -10,7 +10,7 @@ int main() {
   printf("user inputs lines of characters and words followed by clicking enter.\n");
   printf("input lines are then immediately printed in reverse order\n");
   printf("to end, user should input EOF (control 'd').\n");
-  printf("begin input here---|>  ");
+  printf("begin input here------|>");
 
   int len, idx; /* current line length */
   char line[MAXLINE]; /* current input line */
@@ -22,7 +22,7 @@ int main() {
       idx -= 1;
       len -= 1; }
     if (len == 0) {
-      printf("There was no character input detected\nbegin input here---|>  "); }
+      printf("There was no character input detected\nbegin input here------|>"); }
     else {
       reverse_string(line, len);  } }
 
@@ -58,5 +58,5 @@ void reverse_string(char string[], int length) {
     idx2 += 1;
     idx3 -= 1; } 
   new_string[idx2] = 0;
-  printf("reversed string---|>  %s\nbegin input here---|>  ", new_string);
+  printf("reversed string------|>%s\nbegin input here------|>", new_string);
 }

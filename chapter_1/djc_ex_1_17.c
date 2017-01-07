@@ -11,16 +11,16 @@ int main() {
   printf("user inputs lines of characters and words followed by clicking enter.\n");
   printf("input lines longer than 80 characters in length will be immediately printed\n");
   printf("to end, user should input EOF (control 'd').\n");
-  printf("begin input here---|>  ");
+  printf("begin input here------|>");
 
   int len; /* current line length */
   char line[MAXLINE]; /* current input line */
 
   while ((len = djc_getline(line, MAXLINE)) > 0) {
     if (len > MEASUREBAR) {
-      printf("Line longer than 80 characters---|>  %s\nbegin input here---|>  ", line); } 
+      printf("Line longer than 80 characters---|>  %s\nbegin input here------|>", line); } 
     else {
-      printf("Line is 80 characters or less\nbegin input here---|>  "); } }
+      printf("Line is 80 characters or less\nbegin input here------|>"); } }
 
     return 0; }
 
