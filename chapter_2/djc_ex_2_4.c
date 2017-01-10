@@ -12,9 +12,9 @@ int main() {
   char input_string2[MAXCHARS];
   
   printf("\nEnter string 1 to squeeze:\n");
-  fgets(input_string1, 256, stdin);
+  fgets(input_string1, MAXCHARS, stdin);
   printf("\nEnter characters to squeeze out of string 1:\n");
-  fgets(input_string2, 256, stdin);
+  fgets(input_string2, MAXCHARS, stdin);
   
   if (djc_squeeze(input_string1, input_string2)) {
     printf("squeezed string: %s\n", input_string1);
