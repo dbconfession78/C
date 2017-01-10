@@ -33,14 +33,15 @@ int main(void) {
   
   /* 
   **
-  **
-NOTE!! Since array is already a pointer, you cannot use the code `&array` to symbolize the address of array.  If you use `&array` the conventional way of creating a pointer, your program will still function, but it will output this errer below when compiling the program:
+  ** NOTE!! Since array is already a pointer, you cannot use the code `&array` to symbolize the address of array.
+  ** If you use `&array` the conventional way of creating a pointer, your program will still function, but it
+  ** will output this errer below when compiling the program:
 
 pointers_arrays_strings.c:32:8: warning: incompatible pointer types initializing 'int *' with an expression of type 'int (*)[4]' [-Wincompatible-pointer-types]
   int *parray = &array;
        ^        ~~~~~~
-Another fix is to name your pointer to the array *parray = array[0], since the index 0 is the same address as the address of your array.
-  **
+  ** Another fix is to name your pointer to the array *parray = array[0], since the index 0 is the same address
+  ** as the address of your array.
   **
   */
 
