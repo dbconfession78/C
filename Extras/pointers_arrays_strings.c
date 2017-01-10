@@ -29,8 +29,21 @@ int main(void) {
   printf("is this index 0 of array: %d\n", array[0]);
   printf("\n--------------------------------------------\n\n");
     
+  int *parray = array;
+  
+  /* 
+  **
+  **
+NOTE!! Since array is already a pointer, you cannot use the code `&array` to symbolize the address of array.  If you use `&array` the conventional way of creating a pointer, your program will still function, but it will output this errer below when compiling the program:
+
+pointers_arrays_strings.c:32:8: warning: incompatible pointer types initializing 'int *' with an expression of type 'int (*)[4]' [-Wincompatible-pointer-types]
   int *parray = &array;
-    
+       ^        ~~~~~~
+Another fix is to name your pointer to the array *parray = array[0], since the index 0 is the same address as the address of your array.
+  **
+  **
+  */
+
   printf("testing address of array of integers\n");
   printf("addresses of indexes in an array----: { ");
   for (i=0; i < (sizeof (array) /sizeof (array[0])); i++) {
@@ -58,7 +71,8 @@ int main(void) {
   printf("\n--------------------------------------------\n\n");
   
 
-  char *pstring = &string;
+  char *pstring = string;
+  /* See above NOTE!! */
   
   printf("testing address & pointers of string\n");
   printf("is this a string-------------------: %s\n", string);
