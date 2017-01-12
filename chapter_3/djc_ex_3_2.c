@@ -48,6 +48,6 @@ void escape(char to[], char from[]) {
     index1++;
     index2++;
   }
-  to[index1] = '0';
+  to[index2] = '0';
 
 }
