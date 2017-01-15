@@ -24,11 +24,6 @@ int btoi(char *bin) {
 			result = result + (bin[i] - '0');
 			break;
 		}
-		// printf("result: %d\n", result);
-// 		printf("x: %d\n", x);
-// 		printf("power(2,%d): %d\n", x, power(2,x));
-// 		printf("bin[i]: %d\n", bin[i] - '0');
-// 		getchar();
 		result = result + (power(2,x) * (bin[i] - '0'));
 		x--;
 	}
