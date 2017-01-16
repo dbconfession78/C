@@ -72,33 +72,13 @@ int htoi(char s[MAX_BYTES]) {
 
 		if(s[i] >= 'A' && s[i] <= 'F') {
 			switch(s[i]) {
-				case 'A':
-				array[i] = 10;
-				break;
-				
-				case 'B':
-				array[i] = 11;
-				break;
-				
-				case 'C':
-				array[i] = 12;
-				break;
-				
-				case 'D':
-				array[i] = 13;
-				break;
-				
-				case 'E':
-				array[i] = 14;
-				break;
-				
-				case 'F':
-				array[i] = 15;
-				break;
-				
-				default:
-				printf("Invalid Hex!\n");
-				break;
+				case 'A': array[i] = 10; break;
+				case 'B': array[i] = 11; break;
+				case 'C': array[i] = 12; break;
+				case 'D': array[i] = 13; break;
+				case 'E': array[i] = 14; break;
+				case 'F': array[i] = 15; break;
+				default: printf("Invalid Hex!\n"); break;
 			} 
 		} else {
 			char substring[1];
