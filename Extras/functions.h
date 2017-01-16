@@ -4,11 +4,24 @@
 
 #define MAX_BYTES 256
 
+char *reverseStr(char string[]);
 int power(int n, int e);
 char *itob(int dec);
 char *itoh(int dec);
+char *itoa(int i);
 int btoi(char *bin);
 int htoi(char s[MAX_BYTES]);
+
+// flips order of characters in a string
+char *reverseStr(char string[]) {
+	char *result = malloc(strlen(string));
+	
+	for(int i=0; i<strlen(string); i++) {
+		result[i] = string[strlen(string)-1-i];
+	}
+	
+	return result;
+}
 
 // converts binary to integer
 int btoi(char *bin) {
@@ -162,5 +175,21 @@ char *itoh(int dec) {
 		final[(len-i)-1] = array[i];
 	}
 	final[strlen(final)] = '\0';
+	return final;
+}
+
+// converts integer to a chracter array
+char *itoa(int n) {
+	char *result = malloc(MAX_BYTES);
+	char *final = malloc(MAX_BYTES);
+	int i = 0;
+	do {
+		result[i++] = (n % 10) + '0';
+	} while((n /= 10) > 0);
+	printf("%s\n", result);
+	
+	final  = reverseStr(result);
+	printf("%s\n", final);
+	
 	return final;
 }
