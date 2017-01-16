@@ -182,14 +182,19 @@ char *itoh(int dec) {
 char *itoa(int n) {
 	char *result = malloc(MAX_BYTES);
 	char *final = malloc(MAX_BYTES);
-	int i = 0;
+	int i, sign;
+	
+	if((sign = n) < 0) {
+		n = -n;
+	}
+	i = 0;
 	do {
 		result[i++] = (n % 10) + '0';
 	} while((n /= 10) > 0);
-	printf("%s\n", result);
-	
-	final  = reverseStr(result);
-	printf("%s\n", final);
-	
+	if(sign < 0) {
+		result[i++] = '-';
+	}
+	result[i] = '\0';
+	final  = reverseStr(result);	
 	return final;
 }
