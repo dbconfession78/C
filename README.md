@@ -22,4 +22,4 @@ Other Published Solutions, warning spoiler alert.
 
 ## License ##
 
-Copyright WTFPL <a href="http://www.wtfpl.net/" target="_blank">http://www.wtfpl.net/</a>
+Copyright WTFPL <a href="http://www.wtfpl.net/" target="_blank">http://www.wtfpl.net/</a> 
